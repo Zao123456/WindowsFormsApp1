@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{959F574A-3C90-4624-A37A-6FA3880458B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adding_bank_by_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adding_bank_by_admin.Designer.cs">
+      <DependentUpon>adding_bank_by_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_admin_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_admin_account.Designer.cs">
+      <DependentUpon>add_admin_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_bank_branch_by_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_bank_branch_by_admin.Designer.cs">
+      <DependentUpon>add_bank_branch_by_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_customer_by_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_customer_by_employee.Designer.cs">
+      <DependentUpon>add_customer_by_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_customr_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_customr_account.Designer.cs">
+      <DependentUpon>add_customr_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_employee_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_employee_account.Designer.cs">
+      <DependentUpon>add_employee_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_request_for_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_request_for_loan.Designer.cs">
+      <DependentUpon>customer_request_for_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_account.Designer.cs">
+      <DependentUpon>add_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_login.Designer.cs">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_bank.Designer.cs">
+      <DependentUpon>Find_bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_bankD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_bankD.Designer.cs">
+      <DependentUpon>show_bankD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logedin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logedin.Designer.cs">
+      <DependentUpon>logedin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FruitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FruitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adding_bank_by_admin.resx">
+      <DependentUpon>adding_bank_by_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_admin_account.resx">
+      <DependentUpon>add_admin_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_bank_branch_by_admin.resx">
+      <DependentUpon>add_bank_branch_by_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_customer_by_employee.resx">
+      <DependentUpon>add_customer_by_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_customr_account.resx">
+      <DependentUpon>add_customr_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_employee_account.resx">
+      <DependentUpon>add_employee_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_request_for_loan.resx">
+      <DependentUpon>customer_request_for_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_account.resx">
+      <DependentUpon>add_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_login.resx">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_bank.resx">
+      <DependentUpon>Find_bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_bankD.resx">
+      <DependentUpon>show_bankD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logedin.resx">
+      <DependentUpon>logedin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="FruitDataSet.xsc">
+      <DependentUpon>FruitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FruitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FruitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FruitDataSet.xss">
+      <DependentUpon>FruitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
